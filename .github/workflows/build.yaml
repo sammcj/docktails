@@ -25,6 +25,7 @@ jobs:
           path: docktails
       - name: Bump version and push tag
         id: tag_version
+        if: github.ref == 'refs/heads/main'
         uses: mathieudutour/github-tag-action@fcfbdceb3093f6d85a3b194740f8c6cec632f4e2 # v6.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -32,6 +33,7 @@ jobs:
           pre_release_branches: dev
       - name: Create a GitHub release
         uses: ncipollo/release-action@6c75be85e571768fa31b40abf38de58ba0397db5 # v1
+        if: github.ref == 'refs/heads/main'
         with:
           tag: ${{ steps.tag_version.outputs.new_tag }}
           name: Release ${{ steps.tag_version.outputs.new_tag }}
