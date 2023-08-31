@@ -1,2 +1,5 @@
-./docktails
+docktails
 *.env
+*.tmp
+*.swp
+*.vscode
