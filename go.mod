@@ -3,7 +3,7 @@ module docktails
 go 1.21
 
 require (
-	github.com/docker/docker v24.0.5+incompatible
+	github.com/docker/docker v24.0.9+incompatible
 	github.com/fatih/color v1.15.0
 	github.com/pterm/pterm v0.12.67
 	golang.org/x/term v0.11.0
