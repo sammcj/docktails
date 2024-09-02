@@ -19,7 +19,7 @@ jobs:
       - name: Build
         run: go build docktails.go
       - name: upload build artifact
-        uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce # v3
+        uses: actions/upload-artifact@ff15f0306b3f739f7b6fd43fb5d26cd321bd4de5 # v3
         with:
           name: docktails
           path: docktails
@@ -32,7 +32,7 @@ jobs:
           release_branches: main
           pre_release_branches: dev
       - name: Create a GitHub release
-        uses: ncipollo/release-action@6c75be85e571768fa31b40abf38de58ba0397db5 # v1
+        uses: ncipollo/release-action@2c591bcc8ecdcd2db72b97d6147f871fcd833ba5 # v1
         if: github.ref == 'refs/heads/main'
         with:
           tag: ${{ steps.tag_version.outputs.new_tag }}
