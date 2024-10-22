@@ -1,12 +1,12 @@
 module docktails
 
-go 1.21
+go 1.23.2
 
 require (
 	github.com/docker/docker v24.0.5+incompatible
-	github.com/fatih/color v1.15.0
+	github.com/fatih/color v1.18.0
 	github.com/pterm/pterm v0.12.67
-	golang.org/x/term v0.11.0
+	golang.org/x/term v0.25.0
 )
 
 require (
@@ -22,7 +22,7 @@ require (
 	github.com/gookit/color v1.5.4 // indirect
 	github.com/lithammer/fuzzysearch v1.1.8 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
-	github.com/mattn/go-isatty v0.0.17 // indirect
+	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-runewidth v0.0.15 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/image-spec v1.0.2 // indirect
@@ -32,7 +32,7 @@ require (
 	golang.org/x/exp v0.0.0-20230817173708-d852ddb80c63 // indirect
 	golang.org/x/mod v0.12.0 // indirect
 	golang.org/x/net v0.14.0 // indirect
-	golang.org/x/sys v0.11.0 // indirect
+	golang.org/x/sys v0.26.0 // indirect
 	golang.org/x/text v0.12.0 // indirect
 	golang.org/x/tools v0.12.1-0.20230815132531-74c255bcf846 // indirect
 )
